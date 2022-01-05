@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+.backImg {
+  background-image: url(".//images/pexels-matt-hardy-2272940.jpg");
+  width: 100%;
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  color: #f2f2f2;
+  font-size: x-large;
+}
+h2 span {
+  border-bottom: 3px solid black;
+  border-radius: 3%;
+}
+
+.iconify {
+  font-size: xx-large;
+  margin-bottom: 2%;
+}
+
+.container-fluid:nth-child(odd) {
+  background-color: silver;
+}
+
+.circle {
+  border: 2px solid rgb(49, 46, 46);
+  background-color: rgb(49, 46, 46);
+  border-radius: 100%;
+  padding: 8%;
+  position: relative;
+  color: white;
+  width: 150px;
+  height: 150px;
+  transform: 0 !important;
+  margin: auto;
+}
+.arrow::before {
+  content: "\f061";
+  font-family: FontAwesome;
+  color: rgb(49, 46, 46);
+  font-size: 50px;
+  left: 12rem;
+  position: absolute;
+}
+
+.circle1::after {
+  content: "1";
+  border: 2px solid rgb(233, 176, 21);
+  background-color: rgb(233, 176, 21);
+  border-radius: 100%;
+  padding: 7px;
+  width: 40px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  top: 0rem;
+}
+
+.circle2::after {
+  content: "2";
+  border: 2px solid rgb(233, 176, 21);
+  background-color: rgb(233, 176, 21);
+  border-radius: 100%;
+  padding: 7px;
+  width: 40px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  top: 0rem;
+}
+.circle3::after {
+  content: "3";
+  border: 2px solid rgb(233, 176, 21);
+  background-color: rgb(233, 176, 21);
+  border-radius: 100%;
+  padding: 7px;
+  width: 40px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  top: 0rem;
+}
+
+.circle4::after {
+  content: "4";
+  border: 2px solid rgb(233, 176, 21);
+  background-color: rgb(233, 176, 21);
+  border-radius: 100%;
+  padding: 7px;
+  width: 40px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  top: 0rem;
+}
+.circle .iconify {
+  font-size: 50px;
+  margin-left: 25%;
+  margin-top: 25%;
+}
+
+
+.last-icons .iconify {
+  border-radius: 100%;
+  border: 2px solid rgb(49, 46, 46);
+  background-color: rgb(49, 46, 46);
+  color: silver;
+  width: 4rem;
+  height: 4rem;
+  padding: 0 2% 0 2%;
+}
+#girl-pic {
+  width: 41rem;
+  height: 30rem;
+  margin: 5% 0 5% 0;
+}
+footer {
+  background-color: rgb(49, 46, 46);
+}
+footer .iconify {
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  background-color: black;
+  color: silver;
+  padding: 0 2% 0 2%;
+  align-items: center;
+}
+
+
+
+@media only screen and (max-width:992px) {
+  .containerNav a {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2% 8% 3% 0;
+  }
+  
+  .main-text h2{
+      display: none !important; 
+  }
+    .main-text h4{
+      display: none !important; 
+  }
+  .main-text p{
+      display: none !important; 
+  }
+  .fs-3 {
+      margin-left: 2%;
+  }
+
+    #commited {
+      text-align: center;
+      font-size: 15px;
+  }
+ .first{
+      margin-bottom: 2%;
+  }
+
+  .arrow::before{
+      display: none;
+  }
+  
+
+  .boxMain {
+    display: flex;
+  }
+  .text2 h2 {
+    font-size: medium;
+    font-weight: 400;
+  }
+  .text2 span {
+    border-bottom: 2px solid black;
+  }
+  .container-flex {
+    flex-direction: column;
+  }
+
+ 
+  #girl-pic {
+    width: 30rem;
+    height: 20rem;
+    margin-left: 7%;
+  }
+ 
+  .last-icons .iconify {
+      transform: translate(100%);
+     
+  }
+  footer .iconify {
+      transform: translate(60%,-60%);
+      padding: 0 2% 0 2%;
+      font-size:50px;
+  }
+  footer p{
+      text-align: center;
+  }
+}
+
+
+/* @media only screen and (min-width: 768px) {
+   #girl-pic {
+    width: 40rem;
+    height: 30rem;
+    margin-left: 7%;
+  }
+  .arrow::before{
+      display: none;
+  }
+  .containerNav a {
+    display: none;
+  }
+} */
+ 
+
+ @media only screen and (max-width:425px) {
+     #commited {
+        margin: 0 2% 0 2%;
+     }
+     #first-group {
+        margin: 0 2% 0 2%; 
+     }
+     #about h4{
+font-size: small;
+     }
+     #about .text-muted {
+        margin-right: 8%;
+        margin-left: 3%;
+     }
+     
+     #about  p{
+        margin-left: 2%;
+     }
+     .last-icons .iconify {
+         width: 2rem;
+         height: 2rem;
+     }
+     #girl-pic {
+         width:60%;
+         height: 10rem}
+        footer .text-muted {
+            margin-right: 2%;
+        }
+ }
